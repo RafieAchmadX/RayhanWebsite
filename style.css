@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+#header {
+    height: 100vh;
+    background-image: url(imagesRevisi/backgroundFULL.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/*----- Navbar -----*/
+#nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logo {
+    margin-top: 5px;
+    margin-right: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.logo h2 {
+    padding-left: 20px;
+}
+
+li, button, .nav__links a {
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: white;
+    text-decoration: none;
+}
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: rgba(0, 44, 255, 1);
+}
+.cta button {
+    padding: 9px 25px;
+    outline: none;
+    background-image: linear-gradient(114.21deg, #0094FF 37.61%, #002CFF 133.4%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/*----- Header Text -----*/
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.header-text {
+    max-width: 576px;
+    margin-top: 100px;
+}
+.header-text .header-tittle {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 72px;
+}
+.header-text h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+}
+.header-text p {
+    font-size: 18px;
+    line-height: 27px;
+    color: #848484;
+}
+
+/*----- Button -----*/
+.header-button {
+    margin-top: 15px;
+    margin-right: 746px;
+}
+.header-button button {
+    padding: 21px 71px;
+    outline: none;
+    cursor: pointer;
+    background-image: linear-gradient(114.21deg, #0094FF 37.61%, #002CFF 133.4%);
+    color: white;
+    border-radius: 138px;
+    border: none;
+    font-size: 18px;
+}
+.header-button .borderless {
+    margin-left: 25px;
+    background: transparent;
+    color: #6293FF;
+    border: 3px solid #629BFF;
+}
+
+/*----- Header Contact -----*/
+.header-contact {
+    margin-top: 45px;
+    margin-right: 1400px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+
+/*----- About -----*/
+#about {
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 200px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*----- Left Col -----*/
+.about-left-col {
+    flex-basis: 60%;
+}
+.about-card {
+    display: flex;
+    justify-content: space-between;
+}
+.about-card .card1 {
+    width: 405px;
+    height: 365px;
+    box-shadow: 0px 6px 12px rgba(99, 189, 255, 0.5);
+    border-radius: 36px;
+    padding: 25px 45px;
+}
+.card1 h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+.card1 p {
+    font-size: 18px;
+    color: #848484;
+}
+.about-card .card2 {
+    margin-top: 167px;
+    width: 467px;
+    height: 421px;
+    box-shadow: 0px 6px 12px rgba(99, 189, 255, 0.5);
+    border-radius: 36px;
+    padding: 57px 63px;
+}
+.card2 h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+.card2 p {
+    font-size: 18px;
+    color: #848484;
+}
+
+/*----- Right Col -----*/
+.about-right-col {
+    flex-basis: 39%;
+}
+.about-text {
+    max-width: 483px;
+    margin-left: auto; /*because using flexbox*/
+}
+.about-text h3,.about-text h2,.about-text p {
+    direction: ltr;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 600;
+}
+.about-text h2 {
+    font-weight: 500;
+    font-size: 48px;
+}
+.about-text p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #7A7A7A;
+}
+
+/*----- accesories -----*/
+.acs1 {
+    margin-left: 533px;
+    margin-bottom: -83px;
+}
+
+.acs2 {
+    margin-left: 119.49px;
+    margin-top: -150px;
+}
+
+
+/* -----Masterpiece Card----- */
+.masterpiece-card {
+    display: grid;
+    grid-template-columns: auto 357px 634px auto;
+    grid-row: repeat(2, 422px);
+}
+.masterpiece-card-left-col {
+    margin-top: 32px;
+    grid-column: 2/3;
+    font-style: normal;
+}
+.masterpiece-card-left-col h2 {
+    font-size: 48px;
+    font-weight: 500;
+}
+.masterpiece-card-left-col p {
+    font-size: 18px;
+    font-weight: normal;
+}
+.masterpiece-card-left-col .left-text {
+    margin-top: 41px;
+}
+
+.masterpiece-card-right-col {
+    grid-column: 3/4;
+}
+
+.masterpiece-card-left-col button {
+    background: transparent;
+    color: #6293FF;
+    border: 3px solid #629BFF;
+    padding: 10px 94px;
+    border-radius: 138px;
+    font-size: 16px;
+    margin-top: 41px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Arrow */
+.arrow-left-col {
+    grid-area: 1/1/2/2;
+    grid-column: 1/2;
+    place-self: center end; /*Lebih ringkas*/
+    margin-right: 103px;
+}
+.arrow-right-col {
+    grid-area: 1/1/2/2;
+    grid-column: 4/5; 
+    place-self: center start; /*Diisi dengan Align Self dan Justify-self*/
+    transform: rotate(-180deg);
+    margin-left: 103px;
+}
+
+/* Circle Slider */
+.circle-slider {
+    margin-top: 40px;
+    margin-left: 900px;
+    margin-right: 900px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+
+}
+
+/*------------- Contact -------------*/
+#contact {
+    padding: 96px 0;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+#contact h2 {
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+}
+#contact .subTittle {
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+}
+/* Contact Card */
+.contact-row {
+    margin-top: 107px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-col {
+    width: 493px;
+    height: 350px;
+    margin-top: 30px;
+    box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+.contact-col img {
+    margin-top: 31px;
+}
+.contact-col .cnt-tittle {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact-col p{
+    font-size: 18px;
+    font-weight: normal;
+}
+.contact-col button {
+    margin-top: 20px;
+    padding: 3px 34px;
+    background-color: #FFD880;
+    border-radius: 3px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ----- Footer ----- */
+#footer {
+    margin-top: 129px;
+}
+.footer-shape {
+    width: 1945px;
+    height: 100px;
+    box-shadow: 0px -6px 20px rgba(0, 0, 0, 0.25);
+}
+.footer-shape p {
+    padding-top: 48px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*----------- Responsive Website -----------*/
