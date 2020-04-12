@@ -4,37 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayhan Portofolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Header -->
 <section id="header">
-    <div class="container">
+    <div class="container-fluid">
         <!------- Navbar ------->
         <div id="nav">
-            <a class="logo">
-                <img src="imagesRevisi/Logo.png" class="logo-img">
-                <h2>Muhammad Rayhan</h2>
-            </a>
-            <nav>
+                <a class="logo">
+                    <img src="imagesRevisi/Logo.png" class="logo-img">
+                    <h2>Muhammad Rayhan</h2>
+                </a>
                 <ul class="nav__links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Masterpiece</a></li>
+                    <li><a class="cta" href="#">Contact</a></li>
                 </ul>
-            </nav>
-        <a class="cta" href="#"><button> Contact </button></a>
+                <div class="button">
+                    <button class="btn btn-outline-blue btn-hamburger">
+                        Menu
+                    </button>
+                </div>
         </div>
     <!-- Header Text -->
         <div class="header-text">
-            <h1 class="header-tittle">Hello,<br> I'M MUHAMMAD RAYHAN</h1>
-            <h1>UI/UX Designer</h1> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc<br> quis viverra libero. Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Donec faucibus urna vitae massa suscipit<br> efficitur congue at ante. </p>
+            <h1 class="header-tittle">Hello,<br> I'M MUHAMMAD RAYHAN, AN UI/UX Designer</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis viverra libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus urna vitae massa suscipit efficitur congue at ante. </p>
         </div>
         <div class="header-button">
-            <button class="button">Hire Me</button>
-            <button class="button borderless">Get CV</button>
+            <button class="btn btn-outline-blue">Get CV</button>
+            <button class="button2">Hire Me</button>
         </div>
         <div class="header-contact">
             <img src="imagesRevisi/home-gmail.png">
@@ -46,51 +50,65 @@
 
 <!-- About -->
 <section id="about">
-    <div class="about-left-col">
-        <img src="imagesRevisi/acs1.png" class="acs1">
-        <div class="about-card">
-            <div class="card1">
-                <img src="imagesRevisi/spesialis-logo.png">
-                <h3>UI/UX</h3>
-                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Nunc<br> quis viverra libero. Lorem ipsum<br> dolor sit amet, consectetur<br> adipiscing elit. Donec faucibus<br> urna vitae massa suscipit efficitur<br> congue at ante. </p>
-            </div>
-            <div class="card2">
-                <img src="imagesRevisi/spesialis-logo.png">
-                <h3>FRONT-END DEVELOPMENT</h3>
-                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Nunc<br> quis viverra libero. Lorem ipsum<br> dolor sit amet, consectetur<br> adipiscing elit. Donec faucibus<br> urna vitae massa suscipit efficitur<br> congue at ante. </p>
-            </div>
-        </div>
-        <img src="imagesRevisi/acs2.png" class="acs2">
-    </div>
-    <div class="about-right-col">
-        <div class="about-text">
-            <h3>WHAT I DO</h3>
-            <h2>Specilizing In</h2>
-                <div class="circle-line">
-                    <span class="circle"></span>
-                    <span class="line"></span>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-12  order-sm-3">
+                <!-- <img src="imagesRevisi/acs1.png" class="acs1"> -->
+                <div class="about-card sm-center">
+                    <div class="card card1">
+                        <img src="imagesRevisi/spesialis-logo.png">
+                        <h3>UI/UX</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis viverra libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus urna vitae massa suscipit efficitur congue at ante. </p>
+                    </div>
                 </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. Nunc quis viverra libero. Lorem ipsum dolor sit<br> amet, consectetur adipiscing elit. Donec faucibus<br> urna vitae massa suscipit efficitur congue at ante.<br> Integer vehicula metus blandit magna imperdiet<br> tempus.</p>
+                <!-- <img src="imagesRevisi/acs2.png" class="acs2"> -->
+            </div>
+            <div class="col-md-4 col-12 order-sm-2">
+                <div class="about-card sm-center">
+                    <div class="card card2">
+                        <img src="imagesRevisi/spesialis-logo.png">
+                        <h3>FRONT-END DEVELOPMENT</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis viverra libero. Lorem ipsum dolor
+                            sit amet, consectetur adipiscing elit. Donec faucibus urna vitae massa suscipit efficitur congue at
+                            ante. </p>
+                    </div>
+                </div>
+            </div>
+            <div class='col-md-4 order-sm-0'>
+                <div class="about-text mt-20">
+                    <h3>WHAT I DO</h3>
+                    <h2>Specilizing In</h2>
+                        <div class="circle-line">
+                            <span class="circle"></span>
+                            <span class="line"></span>
+                        </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis viverra libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus urna .</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Masterpiece -->
 <section id="masterpiece">
-    <div class="masterpiece-card">
-        <div class="masterpiece-card-left-col">
-            <h2>Portofolio</h2>
-            <p>UI Web Design</p>
-            <p class="left-text">Lorem ipsum dolor sit amet,<br> 
-                consectetur adipiscing elit.<br>
-                Cras luctus fringilla ipsum et<br>
-                aliquet. </p>
-                <button>Order Now</button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 order-sm-2">
+                <div class="masterpiece-card-left-col">
+                    <h2>Portofolio</h2>
+                    <p>UI Web Design</p>
+                    <p class="left-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea eaque voluptatum odio, fugit quibusdam voluptates inventore quis cumque suscipit possimus! Ipsum quis nulla illum at deleniti iure hic esse! Quasi?</p>
+                    <button class='btn btn-outline-blue'>Order Now</button>
+                </div>
+            </div>
+            <div class="col-md-6 order-sm-0">
+                <div class="masterpiece-card-righ-col">
+                    <img src="imagesRevisi/example.png" class='portofolio-img'>
+                </div>
+            </div>
         </div>
-        <div class="masterpiece-card-righ-col">
-            <img src="imagesRevisi/example.png">
-        </div>
-        <!-- Arrow -->
+    </div>
+    <div class="arrow">
         <div class="arrow-left-col">
             <img src="imagesRevisi/arrow.png" class="arwLeft">
         </div>
@@ -109,26 +127,32 @@
 
 <!-- Contact -->
 <section id="contact">
-    <h2>Contact Us</h2>
-    <h2 class="subTittle">Let's Start Something Together</h2>
-    <div class="contact-row">
-        <div class="contact-col">
-            <img src="imagesRevisi/contact-gmail.png">
-            <p class="cnt-tittle">E-Mail</p>
-            <p>Anda ingin mengirimi kami<br> permintaan Anda dari email? tidak<br> masalah</p>
-            <button>Write E-mail</button>
+    <h1>Contact Us</h1>
+    <div class="divider"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="contact-col">
+                <img src="imagesRevisi/contact-gmail.png">
+                <p class="cnt-tittle">E-Mail</p>
+                <p class='contact-sub'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestias non vero earum, omnis assumenda aut soluta ?</p>
+                <button class='btn btn-outline-blue'>Write E-mail</button>
+            </div>
         </div>
-        <div class="contact-col">
-            <img src="imagesRevisi/contact-instgram.png">
-            <p class="cnt-tittle">Instagram</p>
-            <p>Anda ingin mengirimi kami<br> permintaan Anda dari instagram?<br> tidak masalah</p>
-            <button>Write Instagram</button>
+        <div class="col-md-4">
+            <div class="contact-col">
+                <img src="imagesRevisi/contact-instgram.png">
+                <p class="cnt-tittle">Instagram</p>
+                <p class='contact-sub'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestias non vero earum, omnis assumenda aut soluta ?</p>
+                <button class='btn btn-outline-blue'>Write Instagram</button>
+            </div>
         </div>
-        <div class="contact-col">
-            <img src="imagesRevisi/contact-whatsapp.png">
-            <p class="cnt-tittle">WhatsApp</p>
-            <p>Anda ingin mengirimi kami<br> permintaan Anda dari whatsapp?<br> tidak masalah</p>
-            <button>Write WhatsApp</button>
+        <div class="col-md-4">
+            <div class="contact-col">
+                <img src="imagesRevisi/contact-whatsapp.png">
+                <p class="cnt-tittle">WhatsApp</p>
+                <p class='contact-sub'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestias non vero earum, omnis assumenda aut soluta ?</p>
+                <button class='btn btn-outline-blue'>Write WhatsApp</button>
+            </div>
         </div>
     </div>
 </section>

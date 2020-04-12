@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Poppins;
+	font-family: 'Baloo Paaji 2';
     box-sizing: border-box;
 }
 
@@ -15,8 +15,9 @@
 /*----- Navbar -----*/
 #nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
 }
 .logo {
     margin-top: 5px;
@@ -25,12 +26,14 @@
     justify-content: start;
     align-items: center;
 }
+.logo-img {
+    width: 50px;
+}
 .logo h2 {
     padding-left: 20px;
 }
 
 li, button, .nav__links a {
-    font-family: poppins;
     font-weight: 500;
     font-size: 20px;
     line-height: 36px;
@@ -51,7 +54,7 @@ li, button, .nav__links a {
 .nav__links li a:hover {
     color: rgba(0, 44, 255, 1);
 }
-.cta button {
+.cta  {
     padding: 9px 25px;
     outline: none;
     background-image: linear-gradient(114.21deg, #0094FF 37.61%, #002CFF 133.4%);
@@ -61,11 +64,6 @@ li, button, .nav__links a {
     transition: all 0.3s ease 0s;
 }
 
-/*----- Header Text -----*/
-.container {
-    margin-right: 100px;
-    margin-left: 100px;
-}
 .header-text {
     max-width: 576px;
     margin-top: 100px;
@@ -86,28 +84,33 @@ li, button, .nav__links a {
     color: #848484;
 }
 
-/*----- Button -----*/
-.header-button {
-    margin-top: 15px;
-    margin-right: 746px;
+.header-button .button2 {
+    border: 2px solid #629BFF;
+    transition: all .2s;
 }
+.header-button .button2:hover {
+    background-color: #fff;
+    color: #629BFF;
+}
+
 .header-button button {
-    padding: 21px 71px;
+    padding: 10px 50px;
     outline: none;
     cursor: pointer;
-    background-image: linear-gradient(114.21deg, #0094FF 37.61%, #002CFF 133.4%);
+    background: #629BFF;
     color: white;
-    border-radius: 138px;
+    border-radius: 5px;
     border: none;
     font-size: 18px;
 }
-.header-button .borderless {
-    margin-left: 25px;
+.button2 {
+    margin: 0 10px;
+}
+.button1 {
     background: transparent;
     color: #6293FF;
     border: 3px solid #629BFF;
 }
-
 /*----- Header Contact -----*/
 .header-contact {
     margin-top: 45px;
@@ -120,12 +123,7 @@ li, button, .nav__links a {
 
 /*----- About -----*/
 #about {
-    margin-right: 100px;
-    margin-left: 100px;
     padding: 200px 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
 }
 /*----- Left Col -----*/
 .about-left-col {
@@ -135,38 +133,31 @@ li, button, .nav__links a {
     display: flex;
     justify-content: space-between;
 }
-.about-card .card1 {
-    width: 405px;
-    height: 365px;
-    box-shadow: 0px 6px 12px rgba(99, 189, 255, 0.5);
-    border-radius: 36px;
-    padding: 25px 45px;
+.card {
+    width: 100%;
 }
 .card1 h3{
     font-size: 24px;
     font-weight: 500;
 }
-.card1 p {
-    font-size: 18px;
+.card p {
+    font-size: 15px;
     color: #848484;
 }
-.about-card .card2 {
-    margin-top: 167px;
-    width: 467px;
-    height: 421px;
-    box-shadow: 0px 6px 12px rgba(99, 189, 255, 0.5);
-    border-radius: 36px;
-    padding: 57px 63px;
+.card {
+    margin-top: 30px;
+    box-shadow: 2px 6px 15px rgba(100, 100, 100, 0.2);
+    border-radius: 10px;
+    padding: 60px 45px ;
 }
 .card2 h3{
     font-size: 24px;
     font-weight: 500;
 }
-.card2 p {
-    font-size: 18px;
-    color: #848484;
-}
 
+.card2 {
+    margin-top: 200px;
+}
 /*----- Right Col -----*/
 .about-right-col {
     flex-basis: 39%;
@@ -186,7 +177,7 @@ li, button, .nav__links a {
     font-size: 48px;
 }
 .about-text p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     color: #7A7A7A;
 }
@@ -204,15 +195,23 @@ li, button, .nav__links a {
 
 
 /* -----Masterpiece Card----- */
-.masterpiece-card {
-    display: grid;
-    grid-template-columns: auto 357px 634px auto;
-    grid-row: repeat(2, 422px);
+#masterpiece {
+    position: relative;
 }
-.masterpiece-card-left-col {
-    margin-top: 32px;
-    grid-column: 2/3;
-    font-style: normal;
+.arrow {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.portofolio-img {
+    width: 100%;
+}
+.arrow img {
+    width: 30px;
 }
 .masterpiece-card-left-col h2 {
     font-size: 48px;
@@ -223,38 +222,36 @@ li, button, .nav__links a {
     font-weight: normal;
 }
 .masterpiece-card-left-col .left-text {
-    margin-top: 41px;
+    margin-top: 15px;
+    color: #555;
+    font-size: 15px;
 }
 
 .masterpiece-card-right-col {
     grid-column: 3/4;
 }
 
-.masterpiece-card-left-col button {
+.btn.btn-outline-blue:hover{
+    background-color: #629BFF;;
+    color: #fff;
+}
+
+.btn.btn-outline-blue{
     background: transparent;
     color: #6293FF;
-    border: 3px solid #629BFF;
-    padding: 10px 94px;
-    border-radius: 138px;
+    border: 2px solid #629BFF;
+    padding: 10px 50px;
+    border-radius: 5px;
     font-size: 16px;
     margin-top: 41px;
     cursor: pointer;
     outline: none;
+    font-weight: bold;
+    transition: all .2s;
 }
 
-/* Arrow */
-.arrow-left-col {
-    grid-area: 1/1/2/2;
-    grid-column: 1/2;
-    place-self: center end; /*Lebih ringkas*/
-    margin-right: 103px;
-}
 .arrow-right-col {
-    grid-area: 1/1/2/2;
-    grid-column: 4/5; 
-    place-self: center start; /*Diisi dengan Align Self dan Justify-self*/
     transform: rotate(-180deg);
-    margin-left: 103px;
 }
 
 /* Circle Slider */
@@ -265,7 +262,6 @@ li, button, .nav__links a {
     display: flex;
     justify-content: space-around;
     cursor: pointer;
-
 }
 
 /*------------- Contact -------------*/
@@ -274,15 +270,21 @@ li, button, .nav__links a {
     margin-right: 100px;
     margin-left: 100px;
 }
-#contact h2 {
+#contact h1 {
     font-weight: 500;
     font-size: 48px;
     text-align: center;
 }
 #contact .subTittle {
-    font-weight: 600;
-    font-size: 48px;
+    font-weight: 300;
+    font-size: 16px;
     text-align: center;
+}
+.divider {
+    width: 90px;
+    height:3px;
+    margin: 0 auto;
+    background-color: #799AFF;
 }
 /* Contact Card */
 .contact-row {
@@ -293,12 +295,12 @@ li, button, .nav__links a {
     justify-content: space-around;
 }
 .contact-col {
-    width: 493px;
-    height: 350px;
     margin-top: 30px;
-    box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
+    /* box-shadow: 5px 5px 20px rgba(50, 50, 50, 0.25); */
+    /* border-radius: 10px; */
     background-color: #ffffff;
+    text-align: center;
+    padding: 30px
 }
 .contact-col img {
     margin-top: 31px;
@@ -312,7 +314,11 @@ li, button, .nav__links a {
     font-size: 18px;
     font-weight: normal;
 }
-.contact-col button {
+.contact-col .contact-sub {
+    color: #666;
+    font-size: 14px;
+}
+/* .contact-col button {
     margin-top: 20px;
     padding: 3px 34px;
     background-color: #FFD880;
@@ -321,22 +327,38 @@ li, button, .nav__links a {
     outline: none;
     border: none;
     cursor: pointer;
-}
+} */
 
 /* ----- Footer ----- */
 #footer {
     margin-top: 129px;
 }
 .footer-shape {
-    width: 1945px;
-    height: 100px;
-    box-shadow: 0px -6px 20px rgba(0, 0, 0, 0.25);
+    border-top: 1px solid #ccc;
 }
 .footer-shape p {
-    padding-top: 48px;
-    font-size: 24px;
-    font-weight: 600;
+    padding: 20px 0;
+    font-size: 16px;
     text-align: center;
+    color: #655;
 }
 
 /*----------- Responsive Website -----------*/
+@media screen and (max-width: 768px) {
+    #header {
+        background: none;
+    }
+    .card2 {
+        margin-top: 30px
+    }
+    #nav ul {
+        display:none
+    }
+    #nav ul li a {
+        color: #444;
+    }
+    .btn-outline-blue.btn-hamburger {
+        padding: 10px 20px !important;
+        margin-top: 0;
+    }
+}
