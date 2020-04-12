@@ -342,7 +342,9 @@ li, button, .nav__links a {
     text-align: center;
     color: #655;
 }
-
+.btn-outline-blue.btn-hamburger {
+    display:none
+}
 /*----------- Responsive Website -----------*/
 @media screen and (max-width: 768px) {
     #header {
@@ -358,6 +360,7 @@ li, button, .nav__links a {
         color: #444;
     }
     .btn-outline-blue.btn-hamburger {
+        display:block;
         padding: 10px 20px !important;
         margin-top: 0;
     }
